@@ -6,11 +6,11 @@ export const globalStyles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#bba9fc',
+    backgroundColor: '#e2e2e2',
     marginTop: 10,
   },
   tabscreenText: {
-    fontSize: 24,
+    fontSize: 18,
     fontWeight: 'bold',
     color: '#000',
   },
