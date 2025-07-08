@@ -1,10 +1,11 @@
-import {View, Text} from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
+import { globalStyles } from '../../globalStyles'
 
 export default function Saved() {
-    return (
-        <View>
-            <Text>Saved</Text>
-        </View>
-    )
+  return (
+    <View style={globalStyles.tabscreen}>
+      <Text style={globalStyles.tabscreenText}>Saved</Text>
+    </View>
+  )
 }
