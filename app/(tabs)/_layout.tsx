@@ -11,7 +11,7 @@ export default function _Layout() {
         options={{
           title: 'Home',
           headerShown: false,
-          tabBarIcon: ({ focused }) => <TabIcon icon={icons.home} title="Home" />,
+          tabBarIcon: ({ focused }) => <TabIcon icon={icons.home} title="Home" focused={focused} />,
         }}
       />
       <Tabs.Screen
@@ -19,7 +19,9 @@ export default function _Layout() {
         options={{
           title: 'Search',
           headerShown: false,
-          tabBarIcon: ({ focused }) => <TabIcon icon={icons.search} title="Search" />,
+          tabBarIcon: ({ focused }) => (
+            <TabIcon icon={icons.search} title="Search" focused={focused} />
+          ),
         }}
       />
       <Tabs.Screen
@@ -27,7 +29,9 @@ export default function _Layout() {
         options={{
           title: 'Saved',
           headerShown: false,
-          tabBarIcon: ({ focused }) => <TabIcon icon={icons.save} title="Saved" />,
+          tabBarIcon: ({ focused }) => (
+            <TabIcon icon={icons.save} title="Saved" focused={focused} />
+          ),
         }}
       />
       <Tabs.Screen
@@ -35,7 +39,9 @@ export default function _Layout() {
         options={{
           title: 'Profile',
           headerShown: false,
-          tabBarIcon: ({ focused }) => <TabIcon icon={icons.person} title="Profile" />,
+          tabBarIcon: ({ focused }) => (
+            <TabIcon icon={icons.person} title="Profile" focused={focused} />
+          ),
         }}
       />
     </Tabs>
